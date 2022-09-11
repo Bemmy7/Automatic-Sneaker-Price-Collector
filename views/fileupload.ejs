@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro king</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>File uploaded</h1>
+        <form action="getdata" method="post" enctype="multipart/form-data">
+
+            <input type="submit" value="Fetch and download" class="btn btn-success" onclick="document.getElementById('hidden').style='display:flex'">
+        </form>
+        <div>
+            <div id="hidden" style="display: none;">
+                <p class="h4">Fetching data, Your File Will be ready Shortly. This can take up to 10 Minutes, Please Wait and Don't Reload The Page.</p>
+                <br>
+                <br>
+                <div class="spinner-border"></div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
